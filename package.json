@@ -1,0 +1,30 @@
+{
+  "name": "@sethb0/mockstd",
+  "version": "0.0.0",
+  "description": "Mock stdout and stderr for testing",
+  "author": "Seth Blumberg <sethb@pobox.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "testing",
+    "mock",
+    "streams",
+    "stdout"
+  ],
+  "engines": {
+    "node": ">=8",
+    "npm": ">=6"
+  },
+  "repository": "github:sethb0/mockstd",
+  "homepage": "https://github.com/sethb0/mockstd#readme",
+  "bugs": {
+    "url": "https://github.com/sethb0/mockstd/issues"
+  },
+  "dependencies": {
+    "strip-ansi": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sethb0/eslint-config-mfllc": "^0.5.0",
+    "eslint": "^5.7.0"
+  }
+}

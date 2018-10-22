@@ -1,0 +1,32 @@
+root: true
+extends:
+- "@sethb0/mfllc"
+parserOptions:
+  ecmaVersion: 2018
+  ecmaFeatures:
+    jsx: false
+  sourceType: module
+env:
+  es6: true
+  node: true
+rules:
+  object-curly-newline:
+  - warn
+  - ObjectExpression:
+      consistent: true
+      multiline: true
+      minProperties: 3
+    ObjectPattern: never
+    ImportDeclaration: never
+    ExportDeclaration: never
+  require-await: off
+overrides:
+- files: "**/*.spec.js"
+  env:
+    mocha: true
+  rules:
+    func-names: off
+    max-lines: off
+    no-invalid-this: off
+    no-unused-expressions: off
+    prefer-arrow-callback: off
