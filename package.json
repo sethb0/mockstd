@@ -4,7 +4,7 @@
   "description": "Mock stdout and stderr for testing",
   "author": "Seth Blumberg <sethb@pobox.com>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "keywords": [
     "testing",
     "mock",
@@ -21,6 +21,7 @@
     "url": "https://github.com/sethb0/mockstd/issues"
   },
   "dependencies": {
+    "concat-stream": "^1.6.2",
     "strip-ansi": "^5.0.0"
   },
   "devDependencies": {
